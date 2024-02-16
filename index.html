@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> كاف AF</title>
+  <meta name="description" content="this page test for كاف AF">
+  <link rel="shortcut icon" href="/assets/main-logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="container flex justify-between items-center h-full">
+      <img src="./assets/main-logo.svg" alt=" " class="logo" />
+      <div class="flex screen-lg gap-5 items-center links-content text-gray">
+        <a href="" class="links-item active flex flex-col justify-center items-center gap-1">
+          <img src="./assets/ShoppingCartSimple.svg" alt=" " />
+          <span class="links-item-text"> Auctions</span>
+        </a>
+        <a href="" class="links-item flex flex-col justify-center items-center gap-1">
+          <img src="./assets/Trophy.svg" alt=" " />
+          <span class="links-item-text"> Contest</span>
+        </a>
+        <a href="" class="links-item flex flex-col justify-center items-center gap-1">
+          <img src="./assets/Briefcase.svg" alt=" " />
+          <span class="links-item-text"> Project</span>
+        </a>
+        <a href="" class="links-item flex flex-col justify-center items-center gap-1">
+          <img src="./assets/Image.svg" alt=" " />
+          <span class="links-item-text"> Portfolios</span>
+        </a>
+        <a href="" class="links-item flex flex-col justify-center items-center gap-1">
+          <img src="./assets/UsersThree.svg" alt=" " />
+          <span class="links-item-text"> Freelancers</span>
+        </a>
+        <a href="" class="links-item flex flex-col justify-center items-center gap-1">
+          <img src="./assets/Chats.svg" alt=" " />
+          <span class="links-item-text"> Forum</span>
+        </a>
+      </div>
+      <div class="flex items-center gap-3 profile">
+        <a href="" class="message badge">
+          <img src="./assets/ChatCircleDots.svg" alt=" " />
+          <span class="badge-label"> 10 </span>
+        </a>
+        <a href="" class="notification badge">
+          <img src="./assets/notification.svg" alt=" " />
+          <span class="badge-label"> 10 </span>
+        </a>
+        <div class="dropdown">
+          <img src="./assets/parson.png" alt=" " class="rounded-full parson-img dropbtn"
+            onclick="OpenDropdown('myDropdown')" id="parson" />
+          <div class="dropdown-content text-sm" id="myDropdown">
+            <div class="container flex gap-1 items-center">
+              <img src="./assets/parson.png" alt=" " class="rounded-full parson-img" />
+              <div class="h-full">
+                <div class="font-bold text-sm">Ahmed Ali</div>
+                <div class="text-xs text-gray">student</div>
+              </div>
+            </div>
+            <div class="border-y my-3">
+              <a href="" class="container flex gap-1 py-3 items-center text-gray">
+                <img src="./assets/UserCircle.svg" alt=" " />
+                <span class=""> My Profile</span>
+              </a>
+            </div>
+            <div class="container flex justify-between items-center text-gray py-1">
+              <div class="flex gap-1 items-center">
+                <img src="./assets/Moon.svg" alt=" " />
+                <span class=""> Dark Mode</span>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch_dark" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <a href=" " class="container flex justify-between items-center text-gray my-3">
+              <span class="flex gap-1 items-center">
+                <img src="./assets/Translate.svg" alt=" " />
+                <span class="">Language</span>
+              </span>
+              <span class="flex gap-1 items-center">
+                العربية | <img src="./assets/flagSA.png" alt=" " />
+              </span>
+            </a>
+            <a href=" " class="container flex justify-between items-center text-gray my-3">
+              <span class="flex gap-1 items-center">
+                <img src="./assets/GearSix.svg" alt=" " />
+                <span class="">Account Settings</span>
+              </span>
+            </a>
+            <div class="border-t my-3 pt-3">
+              <a href=" " class="container flex gap-1 items-center text-red">
+                <img src="./assets/SignOut.png" alt=" " />
+                <span class="">Logout</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown grid screen-sm">
+          <img src="./assets/menu.svg" alt=" " class="dropbtn" onclick="OpenDropdown('MenuDropdown')" />
+          <div id="MenuDropdown" class="dropdown-content p-2">
+            <div class="grid container gap-5 items-center links-content text-gray">
+              <a href="" class="links-item active flex items-center gap-1">
+                <img src="./assets/ShoppingCartSimple.svg" alt=" " />
+                <span class="links-item-text"> Auctions</span>
+              </a>
+              <a href="" class="links-item flex items-center gap-1">
+                <img src="./assets/Trophy.svg" alt=" " />
+                <span class="links-item-text"> Contest</span>
+              </a>
+              <a href="" class="links-item flex items-center gap-1">
+                <img src="./assets/Briefcase.svg" alt=" " />
+                <span class="links-item-text"> Project</span>
+              </a>
+              <a href="" class="links-item flex items-center gap-1">
+                <img src="./assets/Image.svg" alt=" " />
+                <span class="links-item-text"> Portfolios</span>
+              </a>
+              <a href="" class="links-item flex items-center gap-1">
+                <img src="./assets/UsersThree.svg" alt=" " />
+                <span class="links-item-text"> Freelancers</span>
+              </a>
+              <a href="" class="links-item flex items-center gap-1">
+                <img src="./assets/Chats.svg" alt=" " />
+                <span class="links-item-text"> Forum</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container my-5 pt-3 gap-5 flex">
+    <section class="maim flex-1 gap-4 grid">
+      <div class="text-gray">Design / Logo Design</div>
+      <h1 class="my-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ex
+        id ea nobis, quasi consectetur
+      </h1>
+      <div class="flex justify-between items-center">
+        <div class="stars flex gap-1 items-center text-gray text-sm">
+          <img src="assets/full-star.svg" alt="full-star" />
+          <img src="assets/full-star.svg" alt="full-star" />
+          <img src="assets/full-star.svg" alt="full-star" />
+          <img src="assets/full-star.svg" alt="full-star" />
+          <img src="assets/emty-star.svg" alt="emty-star" />
+          4.1 (500)
+        </div>
+        <div class="flex gap-1 items-center">
+          <img src="assets/ShareNetwork.svg" alt="ShareNetwork" />
+          <img src="assets/Heart.svg" alt="Heart" />
+        </div>
+      </div>
+      <div class="slideshow">
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <img src="/assets/silder.png" alt="slider" style="width: 100%; height: auto" />
+          </div>
+          <div class="mySlides">
+            <img src="/assets/silder.png" alt="slider" style="width: 100%; height: auto" />
+          </div>
+          <div class="mySlides">
+            <img src="/assets/silder.png" alt="slider" style="width: 100%; height: auto" />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)"> ❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <h2 class="">Description</h2>
+      <div class="Description card">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi,
+        cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor
+        sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor
+        sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Diam nisi, cras neque Lorem ipsum dolor sit amet.
+      </div>
+      <div class="flex justify-between items-center">
+        <h2>Service Add-Ons</h2>
+        <div onclick="" class="container-checkbox text-gray gap-1 flex items-center pointer">
+          <img src="assets/Vector (3).svg" alt="" />
+          Select All
+        </div>
+      </div>
+      <div class="multiple-checkbox grid gap-4">
+        <div class="grid gap-2 card">
+          <label class="container-checkbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+            optio? Vitae dolore natus ex, temporibus molestiae eum at cum nemo
+            nostrum ipsam quia nisi error? Voluptates saepe recusandae soluta
+            commodi?
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+          <div class="flex gap-2 text-primary">
+            <span class="bg-primary-20 rounded-sm py-2 p-1"> $100 </span>
+            <span class="bg-primary-20 rounded-sm py-2 p-1"> 2 days </span>
+          </div>
+        </div>
+        <div class="grid gap-2 card">
+          <label class="container-checkbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+            optio? Vitae dolore natus ex, temporibus molestiae eum at cum nemo
+            nostrum ipsam quia nisi error? Voluptates saepe recusandae soluta
+            commodi?
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <div class="flex gap-2 text-primary">
+            <span class="bg-primary-20 rounded-sm py-2 p-1"> $100 </span>
+            <span class="bg-primary-20 rounded-sm py-2 p-1"> 2 days </span>
+          </div>
+        </div>
+        <div class="grid gap-2 card">
+          <label class="container-checkbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+            optio? Vitae dolore natus ex, temporibus molestiae eum at cum nemo
+            nostrum ipsam quia nisi error? Voluptates saepe recusandae soluta
+            commodi?
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <div class="flex gap-2 text-primary">
+            <span class="bg-primary-20 rounded-sm py-2 p-1"> $100 </span>
+            <span class="bg-primary-20 rounded-sm py-2 p-1"> 2 days </span>
+          </div>
+        </div>
+      </div>
+      <h2>Purchase Service</h2>
+      <div class="flex card items-center gap-2">
+        <div class="flex-1 min-w-15 relative input-number">
+          <input type="number" id="numberInput"
+            class="w-full h-full py-3 flex justify-center items-center text-center bg-gray rounded-lg" min="0" step="1"
+            value="1" />
+          <button class="prev p-2" id="decreaseButton" style="left: 25%; padding: 0.5rem 0.6rem"
+            onclick="controlNumber(-1)">
+            -
+          </button>
+          <button id="increaseButton" class="next p-2" style="right: 25%" onclick="controlNumber(1)">
+            +
+          </button>
+        </div>
+        <div class="flex-1 min-w-15 flex items-center gap-10">
+          <div class="flex-1 bg-gray justify-center h-full items-center flex font-semibold py-3 rounded-lg">
+            $<span id="total-price">300</span>
+          </div>
+          <button class="flex-1 bg-primary py-3 text-white pointer rounded-lg shadow">
+            Purchase
+          </button>
+        </div>
+      </div>
+      <h2 class="pt-3 mt-10">
+        <img src="assets/full-star.svg" alt="full-star" /> 4.6 Service Rating
+        . 46 Ratings
+      </h2>
+      <div class="card grid gap-5">
+        <div class="flex gap-3">
+          <div class="flex-1 flex gap-2 min-w-15 font-bold">
+            Work Quality <img src="assets/full-star.svg" alt="full-star" />5.0
+          </div>
+          <div class="flex-1 col-7 flex justify-between min-w-15 items-center gap-3">
+            <div class="stars flex gap-1">
+              <img src="assets/full-star.svg" alt="full-star" /><img src="assets/full-star.svg" alt="full-star" /><img
+                src="assets/full-star.svg" alt="full-star" /><img src="assets/full-star.svg" alt="full-star" /><img
+                src="assets/emty-star.svg" alt="emty-star" />
+            </div>
+            <progress id="file" value="4" max="5" class="flex-1"></progress>
+            4
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <div class="flex-1 flex gap-2 min-w-15 font-bold">
+            Communication & Collaboration
+            <img src="assets/full-star.svg" alt="full-star" />5.0
+          </div>
+          <div class="flex-1 col-7 flex justify-between min-w-15 items-center gap-3">
+            <div class="stars flex gap-1">
+              <img src="assets/full-star.svg" alt="full-star" /><img src="assets/full-star.svg" alt="full-star" /><img
+                src="assets/full-star.svg" alt="full-star" /><img src="assets/full-star.svg" alt="full-star" /><img
+                src="assets/emty-star.svg" alt="emty-star" />
+            </div>
+            <progress id="file" value="4" max="5" class="flex-1"></progress>
+            4
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <div class="flex-1 flex gap-2 min-w-15 font-bold">
+            Adherence to Schedule
+            <img src="assets/full-star.svg" alt="full-star" />5.0
+          </div>
+          <div class="flex-1 col-7 flex justify-between min-w-15 items-center gap-3">
+            <div class="stars flex gap-1">
+              <img src="assets/full-star.svg" alt="full-star" /><img src="assets/full-star.svg" alt="full-star" /><img
+                src="assets/full-star.svg" alt="full-star" /><img src="assets/full-star.svg" alt="full-star" /><img
+                src="assets/emty-star.svg" alt="emty-star" />
+            </div>
+            <progress id="file" value="4" max="5" class="flex-1"></progress>
+            4
+          </div>
+        </div>
+      </div>
+      <div class="card grid gap-5">
+        <div class="grid">
+          <div class="flex gap-2">
+            <img src="./assets/parson.png" alt=" " width="50px" height="50px" class="rounded-full" />
+            <div class="h-full flex-1">
+              <div class="font-bold my-2">Jane Smith</div>
+              <div class="text-xs text-gray flex items-center">
+                <div class="stars flex">
+                  <img src="assets/full-star.svg" alt="full-star" /><img src="assets/full-star.svg"
+                    alt="full-star" /><img src="assets/full-star.svg" alt="full-star" /><img src="assets/full-star.svg"
+                    alt="full-star" /><img src="assets/emty-star.svg" alt="emty-star" />
+                </div>
+                30m
+              </div>
+            </div>
+          </div>
+          <p class="text-gray md:pl-15">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium, voluptatibus deleniti ad culpa magni aut, tenetur
+            quod, enim tempore laborum molestias explicabo consequatur
+            perferendis repellat adipisci asperiores? Sunt, nobis provident?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium, voluptatibus deleniti ad culpa magni aut, tenetur
+            quod, enim tempore laborum molestias explicabo consequatur
+            perferendis repellat adipisci asperiores? Sunt, nobis provident?
+          </p>
+        </div>
+        <div class="grid">
+          <div class="flex gap-2">
+            <img src="./assets/parson.png" alt=" " width="50px" height="50px" class="rounded-full" />
+            <div class="h-full flex-1">
+              <div class="font-bold my-2">Jane Smith</div>
+              <div class="text-xs text-gray flex items-center">
+                <div class="stars flex">
+                  <img src="assets/full-star.svg" alt="full-star" /><img src="assets/full-star.svg"
+                    alt="full-star" /><img src="assets/full-star.svg" alt="full-star" /><img src="assets/full-star.svg"
+                    alt="full-star" /><img src="assets/emty-star.svg" alt="emty-star" />
+                </div>
+                30m
+              </div>
+            </div>
+          </div>
+          <p class="text-gray md:pl-15">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium, voluptatibus deleniti ad culpa magni aut, tenetur
+            quod, enim tempore laborum molestias explicabo consequatur
+            perferendis repellat adipisci asperiores? Sunt, nobis provident?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium, voluptatibus deleniti ad culpa magni aut, tenetur
+            quod, enim tempore laborum molestias explicabo consequatur
+            perferendis repellat adipisci asperiores? Sunt, nobis provident?
+          </p>
+        </div>
+        <div class="grid">
+          <div class="flex gap-2">
+            <img src="./assets/parson.png" alt=" " width="50px" height="50px" class="rounded-full" />
+            <div class="h-full flex-1">
+              <div class="font-bold my-2">Jane Smith</div>
+              <div class="text-xs text-gray flex items-center">
+                <div class="stars flex">
+                  <img src="assets/full-star.svg" alt="full-star" /><img src="assets/full-star.svg"
+                    alt="full-star" /><img src="assets/full-star.svg" alt="full-star" /><img src="assets/full-star.svg"
+                    alt="full-star" /><img src="assets/emty-star.svg" alt="emty-star" />
+                </div>
+                30m
+              </div>
+            </div>
+          </div>
+          <p class="text-gray md:pl-15">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium, voluptatibus deleniti ad culpa magni aut, tenetur
+            quod, enim tempore laborum molestias explicabo consequatur
+            perferendis repellat adipisci asperiores? Sunt, nobis provident?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium, voluptatibus deleniti ad culpa magni aut, tenetur
+            quod, enim tempore laborum molestias explicabo consequatur
+            perferendis repellat adipisci asperiores? Sunt, nobis provident?
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <img src="./assets/parson.png" alt=" " width="50px" height="50px" class="rounded-full" />
+          <div class="grid gap-3 flex-1 min-w-15">
+            <textarea rows="7" class="bg-gray text-gray p-3 rounded-lg "
+              placeholder="Write Your review in here"></textarea>
+            <button class=" bg-primary py-3 text-white pointer rounded-lg shadow" style="width: 12rem;">
+              Post Review
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside class=" col-3  flex flex-col gap-5 min-w-15 pt-3">
+      <div class="card p-5 gap-5 flex justify-center flex-col">
+        <h4 class="my-1"> Contact</h4>
+        <div class="flex justify-center gap-3">
+          <img src="./assets/Medal.svg" alt="Medal " class="bg-gray rounded-sm p-3" />
+          <img src="./assets/SignIn.svg" alt=" " class="bg-gray rounded-sm p-3" />
+          <img src="./assets/IdentificationCard.svg" alt=" " class="bg-gray rounded-sm p-3" />
+        </div>
+        <p class="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni distinctio facere assumenda
+          earum odio dignissimos? Adipisci cupiditate </p>
+        <button class=" bg-primary py-3 text-white pointer rounded-lg shadow">
+          Contact Me
+        </button>
+      </div>
+      <div class="card p-5 gap-5 flex justify-center flex-col">
+        <h4 class="my-1"> Info</h4>
+        <div class="flex gap-2 items-center font-bold text-sm">
+          <img src="./assets/CurrencyCircleDollar.svg" alt=" " class="" />
+          <span class="flex-1">Price</span>
+          $10
+        </div>
+        <div class="flex gap-2 items-center font-bold text-sm">
+          <img src="./assets/Clock.svg" alt=" " class="" />
+          <span class="flex-1">Delivery Duration</span>
+          1 day
+        </div>
+        <div class="flex gap-2 items-center font-bold text-sm">
+          <img src="./assets/Basket.svg" alt=" " class="" />
+          <span class="flex-1">In Progress Orders</span>
+          2
+        </div>
+        <div class="flex gap-2 items-center font-bold text-sm">
+          <img src="./assets/Users.svg" alt=" " class="" />
+          <span class="flex-1">Customers</span>
+          2
+        </div>
+        <div class="flex gap-2 items-center font-bold text-sm">
+          <img src="./assets/Percent.svg" alt=" " class="" />
+          <span class="flex-1">Sales</span>
+          $25
+        </div>
+        <div class="flex gap-2 items-center font-bold text-sm">
+          <img src="./assets/ListDashes.png" alt=" " class="" />
+          <span class="flex-1">Category
+                     </span>
+          Design
+        </div>
+        <div class="flex gap-2 items-center font-bold text-sm">
+          <img src="./assets/ListDashes.png" alt=" " class="" />
+          <span class="flex-1">Subcategory</span>
+          Logo Design
+        </div>
+      </div>
+      <div class="card p-5 gap-5 flex justify-center flex-col">
+        <h4 class="my-1"> Share & Earn</h4>
+        <div class="flex gap-2 justify-between">
+          <a href=""><img src="./assets/linkedin.png" alt="linkedin" class="" /></a>
+          <a href=""><img src="./assets/facebook.png" alt="facebook.png" class="" /></a>
+          <a href=""><img src="./assets/whatsapp.png" alt="whatsapp.png" class="" /></a>
+          <a href=""><img src="./assets/twitter.png" alt="twitter.png" class="" /></a>
+          <a href=""><img src="./assets/copyLink.png" alt="copyLink.png" class="" /></a>
+        </div>
+      </div>
+      <div class=" flex justify-between items-center">
+               <h4 class="my-1">Seller Other Services</h4>
+        <a href="" class="text-gray text-xs">
+          see more
+        </a>
+      </div>
+      <div class="grid gap-2">
+        <a href="" class="card rounded-lg p-0 overflow  nowrap flex">
+          <img src="./assets/img card.png" alt="img card.png" class="w-full h-full"
+            style="max-width: 108px; min-height: 100%; " />
+          <div class="p-2 py-3 grid   ">
+            <p class="font-bold text-xs m-0 p-0">
+              Lorem ipsum dolor
+              sit amet
+              Lorem ipsum dolor
+              sit amet
+              elit...
+            </p>
+            <div class="flex nowrap mt-auto">
+              <div class="flex flex-1 gap-2 items-center text-xs ">
+                <span class="text-gray flex items-center gap-1">
+                  <img src="assets/full-star.svg" alt="full-star" style="width: 15px;" />4.9 (50)
+                </span>
+                <span class="font-bold flex items-center  gap-1"> <img src="assets/Tag.svg" style="width: 15px;"
+                    alt="Tag.svg" />$10</span>
+              </div><img src="assets/Vector (1).svg" alt="Heart (1).svg" style="width: 26px;" class="mt-auto" />
+            </div>
+          </div>
+        </a>
+        <a href="" class="card rounded-lg p-0 overflow  nowrap flex">
+          <img src="./assets/img card.png" alt="img card.png" class="w-full h-full"
+            style="max-width: 108px; min-height: 100%; " />
+          <div class="p-2 py-3 grid   ">
+            <p class="font-bold text-xs m-0 p-0">
+              Lorem ipsum dolor
+              sit amet
+              Lorem ipsum dolor
+              sit amet
+              elit...
+            </p>
+            <div class="flex nowrap mt-auto">
+              <div class="flex flex-1 gap-2 items-center text-xs ">
+                <span class="text-gray flex items-center gap-1">
+                  <img src="assets/full-star.svg" alt="full-star" style="width: 15px;" />4.9 (50)
+                </span>
+                <span class="font-bold flex items-center  gap-1"> <img src="assets/Tag.svg" style="width: 15px;"
+                    alt="Tag.svg" />$10</span>
+              </div><img src="assets/Vector (1).svg" alt="Vector (1).svg" style="width: 26px;" class="mt-auto" />
+            </div>
+          </div>
+        </a>
+        <a href="" class="card rounded-lg p-0 overflow  nowrap flex">
+          <img src="./assets/img card.png" alt="img card.png" class="w-full h-full"
+            style="max-width: 108px; min-height: 100%; " />
+          <div class="p-2 py-3 grid   ">
+            <p class="font-bold text-xs m-0 p-0">
+              Lorem ipsum dolor
+              sit amet
+              Lorem ipsum dolor
+              sit amet
+              elit...
+            </p>
+            <div class="flex nowrap mt-auto">
+              <div class="flex flex-1 gap-2 items-center text-xs ">
+                <span class="text-gray flex items-center gap-1">
+                  <img src="assets/full-star.svg" alt="full-star" style="width: 15px;" />4.9 (50)
+                </span>
+                <span class="font-bold flex items-center  gap-1"> <img src="assets/Tag.svg" style="width: 15px;"
+                    alt="Tag.svg" />$10</span>
+              </div><img src="assets/Heart (1).svg" alt="Heart (1).svg" style="width: 26px;" class="mt-auto" />
+            </div>
+          </div>
+        </a>
+      </div>
+    </aside>
+  </main>
+  <section class="footer grid gap-5 container  my-5">
+    <div class="flex justify-between ">
+      <h3>Suested Services</h3>
+      <a class="text-gray ">
+        see more
+      </a>
+    </div>
+    <div class="flex justify-center gap-5 ">
+      <a class="min-w-15 flex-1 relative card product p-0 rounded-lg overflow">
+        <img src="./assets/img product.png" alt="img product" class="w-full ">
+        <button class="rounded-full bg-main btn-heart flex items-center justify-center "> <img class=""
+            src="/assets/Heart (1).svg" alt="" /> </button>
+        <div class="grid p-3 gap-5">
+          <p class="font-bold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+          </p>
+          <div class="flex items-center text-gray text-sm gap-2">
+            <img src="assets/full-star.svg" alt="full-star" style="width: 15px;" />4.9
+            <img src="assets/Vector.png" alt="Vector.png" style="width: 15px;" />300
+          </div>
+          <div class="flex items-center mt-auto gap-2">
+            <div class="flex-1 flex items-center gap-2 text-sm font-semibold"><img src="assets/PosterAvatar.png"
+                alt="PosterAvatar.png" />Jane Smith
+            </div>
+            <div class=" flex items-center gap-2 font-bold">
+              <img src="assets/Tag.svg" alt="Tag.svg" />$10
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="min-w-15 flex-1 relative card product p-0 rounded-lg overflow">
+        <img src="./assets/img product.png" alt="img product" class="w-full ">
+        <button class="rounded-full bg-main btn-heart flex items-center justify-center "> <img class=""
+            src="/assets/Heart (1).svg" alt="" /> </button>
+        <div class="grid p-3 gap-5">
+          <p class="font-bold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+          </p>
+          <div class="flex items-center text-gray text-sm gap-2">
+            <img src="assets/full-star.svg" alt="full-star" style="width: 15px;" />4.9
+            <img src="assets/Vector.png" alt="Vector.png" style="width: 15px;" />300
+          </div>
+          <div class="flex items-center mt-auto gap-2">
+            <div class="flex-1 flex items-center gap-2 text-sm font-semibold"><img src="assets/PosterAvatar.png"
+                alt="PosterAvatar.png" />Jane Smith
+            </div>
+            <div class=" flex items-center gap-2 font-bold">
+              <img src="assets/Tag.svg" alt="Tag.svg" />$10
+            </div>
+          </div>
+        </div>
+      </a> <a class="min-w-15 flex-1 relative card product p-0 rounded-lg overflow">
+        <img src="./assets/img product.png" alt="img product" class="w-full ">
+        <button class="rounded-full bg-main btn-heart flex items-center justify-center "> <img class=""
+            src="/assets/Heart (1).svg" alt="" /> </button>
+        <div class="grid p-3 gap-5">
+          <p class="font-bold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+          </p>
+          <div class="flex items-center text-gray text-sm gap-2">
+            <img src="assets/full-star.svg" alt="full-star" style="width: 15px;" />4.9
+            <img src="assets/Vector.png" alt="Vector.png" style="width: 15px;" />300
+          </div>
+          <div class="flex items-center mt-auto gap-2">
+            <div class="flex-1 flex items-center gap-2 text-sm font-semibold"><img src="assets/PosterAvatar.png"
+                alt="PosterAvatar.png" />Jane Smith
+            </div>
+            <div class=" flex items-center gap-2 font-bold">
+              <img src="assets/Tag.svg" alt="Tag.svg" />$10
+            </div>
+          </div>
+        </div>
+      </a> <a class="min-w-15 flex-1 relative card product p-0 rounded-lg overflow">
+        <img src="./assets/img product.png" alt="img product" class="w-full ">
+        <button class="rounded-full bg-main btn-heart flex items-center justify-center "> <img class=""
+            src="/assets/Vector (1).svg" alt="" /> </button>
+        <div class="grid p-3 gap-5">
+          <p class="font-bold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+          </p>
+          <div class="flex items-center text-gray text-sm gap-2">
+            <img src="assets/full-star.svg" alt="full-star" style="width: 15px;" />4.9
+            <img src="assets/Vector.png" alt="Vector.png" style="width: 15px;" />300
+          </div>
+          <div class="flex items-center mt-auto gap-2">
+            <div class="flex-1 flex items-center gap-2 text-sm font-semibold"><img src="assets/PosterAvatar.png"
+                alt="PosterAvatar.png" />Jane Smith
+            </div>
+            <div class=" flex items-center gap-2 font-bold">
+              <img src="assets/Tag.svg" alt="Tag.svg" />$10
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+  <script src="./index.js"></script>
+</body>
+</html>

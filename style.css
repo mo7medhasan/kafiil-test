@@ -1,0 +1,586 @@
+:root {
+    --foreground-rgb: 70, 70, 70;
+    --background: 253, 253, 253;
+    --background-primary: 255, 255, 255;
+    --gray-300: 195, 197, 200;
+    --primary: #1DBF73;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body.dark-mode {
+    --foreground-rgb: 253, 253, 253;
+    --background: 12, 12, 12;
+    --background-primary: 0, 0, 0;
+}
+body {
+    color: rgb(var(--foreground-rgb));
+    background-color: rgb(var(--background));
+    margin: 0;
+    border-color: rgb(var(--gray-300)) !important;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+/* public class */
+a {
+    text-decoration-line: none;
+    color: rgb(var(--foreground-rgb));
+}
+button,
+input,
+textarea {
+    border: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.h-full {
+    height: 100%;
+}
+.w-full {
+    width: 100%;
+}
+.min-w-15 {
+    min-width: 15rem;
+}
+.grid {
+    display: grid !important;
+}
+.flex {
+    display: flex !important;
+    flex-wrap: wrap;
+}
+.nowrap {
+    flex-wrap: nowrap
+}
+.flex-1 {
+    flex: 1 1 0%;
+}
+.flex-col {
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.items-center {
+    align-items: center;
+}
+.col-3 {
+    width: 25%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.gap-1 {
+    gap: 0.25rem
+        /* 4px */
+    ;
+}
+.gap-2 {
+    gap: 0.5rem
+}
+.gap-3 {
+    gap: 0.75rem
+}
+.gap-4 {
+    gap: 1rem
+}
+.gap-5 {
+    gap: 1.25rem
+}
+.gap-10 {
+    gap: 2.5rem
+}
+.p-0 {
+    padding: 0px !important;
+}
+.p-1 {
+    padding: 0.25rem
+        /* 4px */
+    ;
+}
+.p-2 {
+    padding: 0.5rem
+}
+.p-3 {
+    padding: 0.75rem
+}
+.p-4 {
+    padding: 1rem
+}
+.p-5 {
+    padding: 1.25rem
+}
+.py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+.pt-1 {
+    padding-top: 0.25rem;
+}
+.pt-2 {
+    padding-top: 0.5rem;
+}
+.pt-3 {
+    padding-top: 0.75rem;
+}
+.m-0 {
+    margin: 0px !important;
+}
+.my-1 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.my-3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+.my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+.mt-auto {
+    margin-top: auto;
+}
+.mt-10 {
+    margin-top: 2.5rem;
+}
+.border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(var(--gray-300)) !important;
+}
+.border-y {
+    border-width: 1px;
+    border-right: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: rgb(var(--gray-300)) !important;
+}
+.border-t {
+    border-width: 1px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: rgb(var(--gray-300)) !important;
+}
+.overflow {
+    overflow: hidden;
+}
+.shadow {
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+}
+.bg-primary {
+    background-color: var(--primary);
+}
+.bg-main {
+        background-color: rgb(var(--background));
+}
+.bg-primary-20 {
+    position: relative;
+    overflow: hidden;
+}
+.bg-primary-20::before {
+        background-color: var(--primary);
+    opacity: 0.1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.bg-gray {
+    background-color: rgb(var(--gray-300), 0.2);
+}
+.rounded-full {
+    border-radius: 100%;
+}
+.rounded-sm {
+    border-radius: 15%;
+}
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+.text-primary {
+    color: var(--primary);
+}
+.text-gray,
+.text-gray * {
+    color: rgb(var(--gray-300)) !important;
+}
+.text-white {
+    color: white;
+}
+.text-red {
+    color: #F56342 !important;
+}
+.text-center {
+    text-align: center;
+}
+.pointer {
+    cursor: pointer;
+}
+.font-semibold {
+    font-weight: 600;
+}
+.font-bold {
+    font-weight: 700;
+}
+.container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    padding: 1.5rem 1rem;
+    background-color: rgb(var(--background-primary));
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+}
+/* private class */
+.screen-sm {
+    display: none !important;
+}
+.screen-lg {
+    display: block;
+}
+.header {
+    border-bottom: 0.5px solid rgb(var(--background));
+    background: rgb(var(--background-primary));
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+}
+.header .logo {
+    height: 100%;
+    width: auto;
+    max-height: 2rem;
+}
+.links-item img {
+    height: auto;
+    width: auto;
+    max-height: 1.5rem;
+}
+.links-item .links-item-text {
+    font-size: small;
+    font-weight: 600;
+}
+.links-item.active .links-item-text {
+    color: var(--primary) !important;
+}.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgb(var(--background-primary));
+    min-width: 15rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 0;
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+.dropdown-content.show {
+    display: block;
+}
+.badge {
+    position: relative;
+}
+.badge-label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    border-radius: 100%;
+    color: white;
+    font-size: x-small;
+    width: 1rem;
+    height: 1rem;
+    top: 0;
+    right: 8%;
+    z-index: 1;
+}
+.profile img {
+    max-height: 2rem;
+    cursor: pointer;
+}
+.parson-img {
+    border: var(--primary) 2px solid;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 2.75rem;
+    height: 1.3rem;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.25s;
+}
+.switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.1rem;
+    width: 1.1rem;
+    left: 0rem;
+    bottom: 0.1rem;
+    background-color: white;
+    transition: 0.25s;
+}
+.switch input:checked+.slider {
+    background-color: var(--primary);
+}
+.switch input:focus+.slider {
+    box-shadow: 0 0 0.063rem var(--primary);
+}
+.switch input:checked+.slider:before {
+    transform: translateX(1.63rem);
+}
+/* Rounded sliders */
+.switch .slider.round {
+    border-radius: 1.7rem;
+}
+.switch .slider.round:before {
+    border-radius: 50%;
+}
+.slideshow,
+.slideshow-container,
+.relative {
+    position: relative;
+}
+/* Slides */
+.slideshow .mySlides {
+    display: none;
+    text-align: center;
+    padding: 0px 1rem;
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(var(--background-primary));
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    border-radius: 100%;
+    line-height: 10px;
+}
+.next {
+    position: absolute;
+    right: 0;
+}
+/* Next & previous buttons */
+.slideshow :where(.prev, .next) {
+        padding: 16px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgb(var(--foreground-rgb));
+}
+/* The dot/bullet/indicator container */
+.slideshow .dot-container {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    /* background: #ddd; */
+}
+/* The dots/bullets/indicators */
+.slideshow .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+/* Add a background color to the active dot/circle */
+.slideshow .active,
+.slideshow .dot:hover {
+    background-color: var(--primary);
+}
+.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    /* background-color: var(); */
+    border: 1px solid rgb(var(--gray-300));
+    border-radius: 100%;
+}
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input~.checkmark {
+    background-color: var(--primary);
+}
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked~.checkmark {
+    background-color: var(--primary);
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.container-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.stars {
+    width: 120px;
+}
+.stars img {
+    width: 20px;
+}
+.product {
+    max-width: 350px;
+}
+.btn-heart {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 1rem;
+    left: 1rem;
+}
+progress[value] {
+    --color: #ffcb31;
+    /* the progress color */
+    --background: lightgrey;
+    /* the background color */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 200px;
+    margin: 0 10px;
+    border-radius: 10em;
+    background: var(--background);
+    height: 0.7em;
+}
+progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    background: var(--background);
+}
+progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: var(--color);
+}
+progress[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: var(--color);
+}
+@media (min-width: 768px) {
+    .md\:pl-15 {
+        padding-left: 4rem;
+        /* Assuming rem unit is used in Tailwind CSS */
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .screen-lg {
+        display: none !important;
+    }
+    .screen-sm {
+        display: block !important;
+    }
+}
+@media (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
